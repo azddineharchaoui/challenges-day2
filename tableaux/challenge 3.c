@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("entrez le nombre d\'element du tableau\n");
+    scanf("%d",&n);
+    int t[n];
+    printf("entrer les elements du tableau un par un \n");
+    for(int i=0; i<n; i++){
+        scanf("%d", &t[i]);
+    }
+    int sum=0;
+    for (int j=0; j<n; j++){
+        sum+=t[j];
+    }
+    printf("la somme des elements du tables est %d\n", sum );
+    return 0;
+}
